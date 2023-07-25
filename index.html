@@ -13,17 +13,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!--! font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                backgroundImage:{
+                'banner1':"url('./images/banner1.png')",
+                'banner2':"url('./images/banner1.png')",
+                'banner3':"url('./images/banner2.png')",
+                'banner4':"url('./images/banner3.png')",
+                
+            }
+            }
+          }
+        }
+      </script>
     <style>
         *{
             font-family: 'Lato', sans-serif;
         }
+      
     </style>
 </head>
 <body>
     <!--? header part -->
-    <header class="max-w-screen-xl mx-auto px-4 md:px-0">
+    <header class="max-w-screen-xl mx-auto px-5 md:px-0">
         <!-- navbar -->
-        <nav class="lg:container mx-auto lg:p-3 rounded-full lg:bg-[#F85559] mt-5">
+        <nav class="lg:container mx-auto lg:p-3 rounded-full lg:bg-[#F85559] mt-7">
             <div class="flex flex-row-reverse lg:flex-row items-center justify-between">
                 <div class="flex text-black ">
                     <div class="dropdown">
@@ -60,8 +76,89 @@
             </div>
             
         </nav>
-        <!--! slider hero -->
-        
+        <!--! banner hero -->
+       <div class="container mx-auto mt-4 lg:mt-7">
+        <div class="carousel w-full lg:h-[450px]">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="w-full ">
+                <div class="hero bg-banner1 lg:h-[450px] ">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn btn-error text-white normal-case">Shop Now</button>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-transparent text-white ">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-transparent text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="w-full ">
+                    <div class="hero bg-banner2 lg:h-[450px] ">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-white normal-case">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-transparent text-white ">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-transparent text-white ">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="w-full ">
+                    <div class="hero bg-banner3 lg:h-[450px] ">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-white normal-case">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-transparent text-white ">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-transparent text-white ">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="w-full ">
+                    <div class="hero bg-banner4 lg:h-[450px] ">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn btn-error text-white normal-case">Shop Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-transparent text-white ">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-transparent text-white ">❯</a>
+              </div>
+            </div>
+          </div>
+    
+       </div>
     </header>
+ 
 </body>
 </html>
