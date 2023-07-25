@@ -23,14 +23,14 @@
     <!--? header part -->
     <header class="max-w-screen-xl mx-auto px-4 md:px-0">
         <!-- navbar -->
-        <nav class="lg:container mx-auto lg:p-3 rounded-full bg-[#F85559]">
+        <nav class="lg:container mx-auto lg:p-3 rounded-full lg:bg-[#F85559] mt-5">
             <div class="flex flex-row-reverse lg:flex-row items-center justify-between">
-                <div class="flex text-white">
+                <div class="flex text-black ">
                     <div class="dropdown">
-                      <label tabindex="0" class=" text-black lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      <label tabindex="0" class=" text-black lg:hidden ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-9 h-14 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                       </label>
-                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  w-40  right-0">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
@@ -38,7 +38,7 @@
                       </ul>
                     </div>
                     <div class=" hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
+                        <ul class="menu menu-horizontal px-1 ">
                             <li><a href="">Home</a></li>
                             <li><a href="">About Us</a></li>
                             <li><a href="">Shop</a></li>
@@ -53,12 +53,15 @@
                     <h2 class="text-2xl md:text-4xl font-bold text-black lg:text-white">Fruit Burst</h2>
                  </div>
                
-                <div class="hidden lg:flex relative">
+                <div class="hidden md:hidden lg:flex relative">
                   <input type="text" class="input max-w-xl rounded-full " placeholder="Search here">
                   <button class="absolute right-3  top-3"><i class="fa-solid fa-magnifying-glass text-gray-300"></i></button>
                 </div>
             </div>
+            
         </nav>
+        <!--! slider hero -->
+        
     </header>
 </body>
 </html>
