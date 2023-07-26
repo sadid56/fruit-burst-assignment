@@ -36,17 +36,17 @@
     </style>
 </head>
 <body>
-    <!--? header part -->
+    <!--! header part -->
     <header class="max-w-screen-xl mx-auto px-5 md:px-0">
         <!-- navbar -->
         <nav class="lg:container mx-auto lg:p-3 rounded-full lg:bg-[#F85559] mt-7">
             <div class="flex flex-row-reverse lg:flex-row items-center justify-between">
-                <div class="flex text-black ">
+                <div class="flex ">
                     <div class="dropdown">
                       <label tabindex="0" class=" text-black lg:hidden ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-9 h-14 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                       </label>
-                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  w-40  right-0">
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  w-40  right-0 ">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
@@ -54,7 +54,7 @@
                       </ul>
                     </div>
                     <div class=" hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1 ">
+                        <ul class=" flex gap-5 px-1 text-white text-lg">
                             <li><a href="">Home</a></li>
                             <li><a href="">About Us</a></li>
                             <li><a href="">Shop</a></li>
@@ -158,9 +158,57 @@
           </div>
     
        </div>
+       <!-- fruits container-->
+       <div class="hidden md:flex relative -top-24 gap-5 bg-white shadow-md rounded-md max-w-4xl mx-auto">
+        <!-- fruit-1 -->
+        <div class="card  ">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit1.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <p class="text-[#12121299] font-medium text-xl">Strawberry</p>
+        </div>
+       </div>
+       <!-- fruit-2 -->
+            <div class="card  ">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit2.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <p class="text-[#12121299] font-medium text-xl">Orange</p>
+            </div>
+          </div>
+       <!-- fruit-3 -->
+          <div class="card  ">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit3.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <p class="text-[#12121299] font-medium text-xl">Mango</p>
+          </div>
+        </div>
+        <!-- fruit-4 -->
+        <div class="card ">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit4.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <p class="text-[#12121299] font-medium text-xl">Strawberry</p>
+        </div>
+      </div>
+        <!-- fruit-5 -->
+      <div class="card  ">
+        <figure class="px-10 pt-10">
+          <img src="./images/fruit5.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <p class="text-[#12121299] font-medium text-xl">Pomegranate</p>
+      </div>
+      </div>
+       </div>
     </header>
  <!--! main part -->
-    <main class="max-w-screen-xl mx-auto mt-5 lg:mt-16 px-5 lg:px-0">
+    <main class="max-w-screen-xl mx-auto mt-5 lg:mt-10 px-5 lg:px-0">
         <!-- Deal of the day section -->
         <section class="container mx-auto">
             <!-- timer -->
